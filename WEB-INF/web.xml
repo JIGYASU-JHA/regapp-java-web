@@ -1,0 +1,27 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
+         https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <servlet>
+        <servlet-name>RegisterOne</servlet-name>
+        <servlet-class>RegistrationServletOne</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterOne</servlet-name>
+        <url-pattern>/registerone</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterTwo</servlet-name>
+        <servlet-class>RegistrationServletTwo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>   
+        <servlet-name>RegisterTwo</servlet-name>
+        <url-pattern>/registertwo</url-pattern>
+    </servlet-mapping>
+
+</web-app>
